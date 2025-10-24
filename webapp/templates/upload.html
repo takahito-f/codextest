@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}課金情報アップロード{% endblock %}
+{% block content %}
+<h1>課金情報アップロード</h1>
+<form method="post" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+  <div class="field">
+    <label for="file">ファイル</label>
+    <input id="file" type="file" name="file" accept=".csv" required>
+  </div>
+  <div class="actions">
+    <button type="submit">アップロード</button>
+  </div>
+</form>
+{% endblock %}
