@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  background: #f7f7f7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.messages {
+  list-style: none;
+  padding: 0;
+}
+
+.messages li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.messages li.success {
+  background: #d1f2d1;
+}
+
+.messages li.error {
+  background: #f8d7da;
+}
+
+form .field {
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table td.number {
+  text-align: right;
+}
+
+.error {
+  color: #d00;
+  margin-left: 0.5rem;
+}
+
+.pagination {
+  margin-top: 1rem;
+}
+
+.pagination a,
+.pagination span {
+  margin-right: 0.5rem;
+}
+
+.pagination .current {
+  font-weight: bold;
+}
